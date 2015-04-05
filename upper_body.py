@@ -2,6 +2,7 @@ import cv2
 import sys
 
 body_cascade = cv2.CascadeClassifier('haarcascade_mcs_upperbody.xml')
+video_capture = cv2.VideoCapture(0)
 
 while True:
 	ret,frame = video_capture.read()
